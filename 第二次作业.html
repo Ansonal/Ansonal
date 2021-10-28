@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二次作业</title>
+</head>
+
+<style>
+    .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .green {
+        padding: 20px;
+        border-style: solid;
+        border-color: greenyellow;
+        width: 150px;
+        height: 200px;
+        position: relative;
+        top: 50px;
+        left: 90px;
+    }
+    
+    .blue {
+        padding: 20px;
+        border-style: solid;
+        border-color: blue;
+        width: 150px;
+        height: 40px;
+        position: relative;
+        top: 110px;
+        left: 70px;
+    }
+    
+    .yellow {
+        padding: 20px;
+        border-style: solid;
+        border-color: yellow;
+        width: 150px;
+        height: 120px;
+        position: relative;
+        top: 60px;
+        left: 10px;
+        font-size: 20px;
+    }
+    
+    .red {
+        padding: 20px;
+        border-style: solid;
+        border-color: red;
+        width: 150px;
+        height: 80px;
+        position: relative;
+        top: 80px;
+        left: 40px;
+    }
+    
+    @media screen and (max-width:800px) {
+        .yellow {
+            order: 2;
+            position: relative;
+            top: 2px;
+            left: 85px;
+        }
+        .red {
+            order: 3;
+            position: relative;
+            top: 2px;
+            left: 135px;
+        }
+        .blue {
+            order: 4;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        .green {
+            order: 1;
+            position: relative;
+            top: 2px;
+            left: 20px;
+        }
+    }
+</style>
+
+<body>
+    <span class="wrapper">
+    <span class="yellow"></span>
+    <span class="red"></span>
+    <span class="blue"></span>
+    <span class="green"></span>
+    </span>
+
+</body>
+
+</html>
